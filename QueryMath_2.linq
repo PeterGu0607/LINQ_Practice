@@ -8,7 +8,7 @@
 </Query>
 
 var results = from g in Genres
-              orderby g.Name.Equals("Heavy Metal")
+              where g.Name.Equals("Heavy Metal")
 			  
 			  select new
 			  {
